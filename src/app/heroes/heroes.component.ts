@@ -7,11 +7,11 @@ import { HEROES } from '../mock-heroes';
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css']
 })
-
 export class HeroesComponent implements OnInit {
 
   heroes = HEROES;
-  selectedHero: Hero | undefined;
+
+  selectedHero!: Hero;
 
   constructor() { }
 
